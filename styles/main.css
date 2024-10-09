@@ -2,7 +2,117 @@
 body{
     font-family: helvetica, arial, sans-serif;
 	font-size:1em;
+    background-color: #2a636e;
 }
 h1, h2{
     font-family: 'Raleway', sans-serif;
+}
+header{
+    display: flex;
+    background-color: #263248;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    text-decoration: underline;
+}
+
+#logo{
+    padding:10px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    min-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border: 10px dashed #2a636e;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover{
+    color: #7E8AA2;
+}
+
+nav ul li{	
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+    border-left:1px solid #7E8AA2;
+}
+
+nav li:first-child{
+    border-left:none;	
+}
+
+nav ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+main{
+    display:flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.resize-img{
+    width:100%;
+    height:100%;
+}
+
+section {
+    padding: 0 10px 10px 0;
+    flex: 1 1 auto;
+    padding:10px 20px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    
+    
+}
+
+.sidebar{
+    padding:20px 40px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex: 0 0 200px;
+}
+
+#left li a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+#left li {
+    list-style: none;
+    display:inline;
+    
+}
+#left {
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+footer{
+    border-top: 2px solid #ccc;
+    margin: 20px 10px 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+    font-style: italic;
 }
